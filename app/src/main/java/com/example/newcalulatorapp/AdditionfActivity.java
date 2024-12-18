@@ -1,5 +1,6 @@
 package com.example.newcalulatorapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -43,6 +44,13 @@ public class AdditionfActivity extends AppCompatActivity {
                 sum=String.valueOf(result);
                 Toast.makeText(getApplicationContext(),sum,Toast.LENGTH_SHORT).show();
                 tv1.setText(sum);
+            }
+        });
+        b6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(i);
             }
         });
 
