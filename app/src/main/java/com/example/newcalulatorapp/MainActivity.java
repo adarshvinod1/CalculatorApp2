@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        b1.setOnClickListener(new View.OnClickListener() {
+        b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(getApplicationContext(), AdditionfActivity.class);
+                Intent i=new Intent(getApplicationContext(), MultipicationfActivity.class);
                 startActivity(i);
             }
         });
